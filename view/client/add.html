@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gestion Clients</title>
+	<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.min.css"/>
+	<link type="text/css" rel="stylesheet" href="{$url_base}public/css/samane.css"/>
+</head>
+
+	 <div class="nav navbar navbar-default navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+        <li><a href="{$url_base}Client/index">Accueil Client</a></li>
+        <li><a href="{$url_base}Client/add">Ajouter Un Client</a></li>
+        <li><a href="{$url_base}Client/liste">Liste des clients</a></li>
+      </ul>
+    </div>
+
+<body>
+	<div class="col-md-6 col-xs-12 col-md-offset-3" style="margin-top:100px; ">
+			<div class="panel panel-info">
+				<div class="panel-heading">Abonnement d'un Client !</div>
+				<div class="panel-body">
+					<form method="post" action="">
+						<div class="form-group">
+							<label class="control-label">Numéro Client</label>
+							<input class="form-control" type="text" name="idClient" id="idClient"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Nom </label>
+							<input class="form-control" type="text" name="nomClient" id="nomClient"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Prénom </label>
+							<input class="form-control" type="text" name="prenomClient" id="prenomClient"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Téléphone</label>
+							<input class="form-control" type="text" name="telephoneClient" id="telephoneClient"/>
+						</div>
+						<div class="form-group">
+						    <label for="control-label"> Village de Résidence</label>
+						    <select id="idVillage" name="idVillage" class="form-control">
+						        <option value="">-------------</option>
+						      	{foreach from=$villages item=village}
+						      		<option value="{$village['idVillage']}"> {$village['nomVillage']}</option>
+						      	{/foreach}
+						    </select>
+						  </div>
+
+						 <div class="form-group">
+						     <label for="control-label"> Abonnement</label>
+						     <select id="numero" name="numero" class="form-control">
+						         <option value="">-------------</option>
+						       	{foreach from=$abonnements item=abonnement}
+						       		<option value="{$abonnement['numero']}"> {$abonnement['description']}</option>						 
+						       	{/foreach}
+						     </select>
+						   </div>  
+						<div class="form-group">
+							<label class="control-label">Date</label>
+							<input class="form-control" type="Date" name="dateAb" id="dateAb"/>
+						</div>
+						<div class="form-group">
+							<input class="btn btn-success" type="submit" name="valider" value="Envoyer"/>
+							<a class="btn btn-danger" href="{$url_base}Client/index">Annuler </a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

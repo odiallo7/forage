@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajout d'un nouveau Village</title>
+	<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/samane.css"/>
+		<style>
+			h1{ 
+				color: #40007d;
+			}
+		</style>
+</head>
+
+ <div class="nav navbar navbar-default navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+        <li><a href="{$url_base}Village/index">Accueil Village</a></li>
+        <li><a href="{$url_base}Village/add">Ajouter un nouveau Village</a></li>
+        <li><a href="{$url_base}Village/liste">Liste des Villages clients</a></li>
+      </ul>
+    </div>
+
+<body>
+	<div class="col-md-8 col-xs-12 col-md-offset-2" style="margin-top:150px;">
+			<div class="panel panel-info">
+				<div class="panel-heading">Ajout d'un Village !</div>
+				<div class="panel-body">
+					<form method="post" action="">
+						<div class="form-group">
+							<label class="control-label">Numéro Village</label>
+							<input class="form-control" type="text" name="idVillage" id="idVillage"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Nom Village</label>
+							<input class="form-control" type="text" name="nomVillage" id="nomVillage"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Nom du Chef</label>
+							<input class="form-control" type="text" name="nomChef" id="nomChef"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Prénom du Chef</label>
+							<input class="form-control" type="text" name="prenomChef" id="prenomChef"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Téléphone du Chef</label>
+							<input class="form-control" type="text" name="telephoneChef" id="telephoneChef"/>
+						</div>
+						<div class="form-group">
+							<input class="btn btn-success" type="submit" name="valider" value="Envoyer"/>
+							<input class="btn btn-danger" type="reset" name="annuler" value="Annuler"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

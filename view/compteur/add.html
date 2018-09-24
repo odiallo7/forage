@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gestion Clients</title>
+	<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.min.css"/>
+	<link type="text/css" rel="stylesheet" href="{$url_base}public/css/samane.css"/>
+</head>
+
+	 <div class="nav navbar navbar-default navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+        <li><a href="{$url_base}compteur/index">Accueil Compteur</a></li>
+        <li><a href="{$url_base}compteur/add">Ajouter Un Compteur</a></li>
+        <li><a href="{$url_base}compteur/liste">Consommation des Compteurs</a></li>
+      </ul>
+    </div>
+
+<body>
+	<div class="col-md-6 col-xs-12 col-md-offset-3" style="margin-top:100px; ">
+			<div class="panel panel-info">
+				<div class="panel-heading">Raccordement de compteur Client!</div>
+				<div class="panel-body">
+					<form method="post" action="">
+						<div class="form-group">
+							<label class="control-label">Numéro Compteur</label>
+							<input class="form-control" type="text" name="idCompteur" id="idCompteur"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Compteur Consommation </label>
+							<input class="form-control" type="text" name="compteur" id="compteur"/>
+						</div>						
+						<div class="form-group">
+							<label class="control-label">Etat du Compteur</label>
+							<input class="form-control" type="boolean" name="etatCompteur" id="etatCompteur"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label"> Numéro du Client </label>
+							<input class="form-control" type="text" name="idClient" id="idClient"/>
+						</div>
+						<div class="form-group">
+							<input class="btn btn-success" type="submit" name="valider" value="Envoyer"/>
+							<a class="btn btn-danger" href="{$url_base}compteur/index">Annuler </a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
