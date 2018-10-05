@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-09-24 18:55:19
+/* Smarty version 3.1.30, created on 2018-09-25 19:03:48
   from "C:\xampp\htdocs\forage\view\compteur\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ba916f78dd150_48453967',
+  'unifunc' => 'content_5baa6a740acd84_25658624',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '609f9872bc23c6b75470b250831fb1c25244fad1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\forage\\view\\compteur\\index.html',
-      1 => 1537807150,
+      1 => 1537895024,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba916f78dd150_48453967 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5baa6a740acd84_25658624 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,11 +38,13 @@ public/css/samane.css"/>
         <!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Client/index">Accueil Compteur</a></li>
+Compteur/index">Accueil Compteur</a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Client/add">Ajouter Un Compteur</a></li>
+Compteur/add">Ajouter Un Compteur</a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Client/liste">Liste des Compteurs</a></li>
+Compteur/liste">Liste des Compteurs</a></li>
+        <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Compteur/saveconso">Enregistrer Conso</a></li>
       </ul>
     </div>
 <body>
