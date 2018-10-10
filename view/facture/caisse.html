@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Caisse</title>
+		<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/samane.css"/>
+		<link rel="shortcut icon" href="{$url_base}public/image/favicon.ico">
+		<script type="text/javascript" src="{$url_base}public/js/jquery.js"></script>
+		<script type="text/javascript" src="{$url_base}public/js/bootstrap.js"></script>
+		
+	</head>
+	<body>
+
+		<div class="nav navbar navbar-default navbar-fixed-top">
+			<ul class="nav navbar-nav">
+				<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+				<li><a href="{$url_base}Compteur/index">Accueil </a></li>
+				<li><a href="{$url_base}Compteur/index">Liste des Factures impayées</a></li>
+
+			</ul>
+		</div>
+
+
+		{if isset($ok)}
+			{if $ok != 0}
+		<div class="alert alert-success alert-dismissible" style="width: 50%; margin-left: 25%; margin-top: 80px;">
+		   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		   <strong>Success!</strong> Facture Payée
+		</div>
+		 {else}
+		 <div class="alert alert-warning alert-dismissible" style="width: 50%; margin-left: 25%; margin-top: 100px;">
+		     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		     <strong>Erreur !</strong> Reprennez le processus!
+		   </div>
+		 	{/if}
+		 {/if}
+
+		<div class="col-md-8 col-xs-12 col-md-offset-2" style="margin-top:120px;">
+			<div class="panel panel-info">
+				<div class="panel-heading">REGLEMENT DE FACTURE</div>
+				<div class="panel-body">			
+							
+					<form method="post" action="{$url_base}Facture/payer">
+						<div class="form-group">
+							<label class="control-label">Numéro de la Facture</label>
+							<input class="form-control" type="text" name="idFacture" id="idFacture"/>
+						</div>			
+						<div class="form-group">
+							<input class="btn btn-success" type="submit" name="valider" value="Envoyer"/>
+							<a class="btn btn-danger" href="{$url_base}Compteur/index">Terminer </a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-09-24 18:27:19
+/* Smarty version 3.1.30, created on 2018-10-10 14:41:24
   from "C:\xampp\htdocs\forage\view\client\add.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ba910671d9ba3_02932804',
+  'unifunc' => 'content_5bbdf374d91a88_21352107',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9b6606db6659813a373a45f3d0aa1418e09f2f4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\forage\\view\\client\\add.html',
-      1 => 1537806433,
+      1 => 1539175014,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba910671d9ba3_02932804 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbdf374d91a88_21352107 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,6 +31,8 @@ function content_5ba910671d9ba3_02932804 (Smarty_Internal_Template $_smarty_tpl)
 public/css/bootstrap.min.css"/>
 	<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/samane.css"/>
+	<link rel="shortcut icon" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/favicon.ico">
 </head>
 
 	 <div class="nav navbar navbar-default navbar-fixed-top">

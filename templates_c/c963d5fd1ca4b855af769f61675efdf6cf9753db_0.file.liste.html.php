@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-09-25 19:02:36
+/* Smarty version 3.1.30, created on 2018-10-10 13:21:36
   from "C:\xampp\htdocs\forage\view\compteur\liste.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5baa6a2c325331_00871245',
+  'unifunc' => 'content_5bbde0c06a5b35_73328059',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c963d5fd1ca4b855af769f61675efdf6cf9753db' => 
     array (
       0 => 'C:\\xampp\\htdocs\\forage\\view\\compteur\\liste.html',
-      1 => 1537894872,
+      1 => 1539166421,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baa6a2c325331_00871245 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbde0c06a5b35_73328059 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -89,6 +89,8 @@ Compteur/add">Ajouter Compteur</a></li>
 Compteur/liste">Liste des Compteurs</a></li>
       <li class="nav-item"><a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Compteur/saveconso">Enregistrer Consommation</a></li>
+      <li class="nav-item"><a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Consommation/facture">Générer les Factures</a></li>
     </ul>
   </div>
     
@@ -103,6 +105,7 @@ Compteur/saveconso">Enregistrer Consommation</a></li>
       <thead>
         <tr>
             <th>Numéro </th>
+            <th>Index </th>
             <th>Consommation</th>
             <th>Etat </th>
             <th>Client</th>           
@@ -119,7 +122,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['compteur']->value) {
           <tr>
             <td><?php echo $_smarty_tpl->tpl_vars['compteur']->value['idCompteur'];?>
 </td>
-            <td><?php echo $_smarty_tpl->tpl_vars['compteur']->value['compteur'];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['compteur']->value['indexCompteur'];?>
+</td>
+            <td><?php echo $_smarty_tpl->tpl_vars['compteur']->value['conso'];?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['compteur']->value['etatCompteur'];?>
 </td>

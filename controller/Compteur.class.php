@@ -18,13 +18,18 @@ class Compteur extends Controller
 		return $this->view->load("compteur/index");
 	}
 
+	public function index2()
+	{
+		return $this->view->load("compteur/index2");
+	}
+
 	public function add()
 	{
 		$tdb = new CompteurDB();
 		if (isset($_POST['valider'])) {
 			extract($_POST);
 			if(!empty($idCompteur) && !empty($idClient)){
-				$ok = $tdb->addCompteur($idCompteur, $compteur,	$etatCompteur, $idClient);
+				$ok = $tdb->addCompteur($idCompteur, $etatCompteur, $idClient);
 			}
 		return $this->view->load("compteur/index");
 		}else{
@@ -47,9 +52,9 @@ class Compteur extends Controller
 		if (isset($_POST['valider'])) 
 		{	
 			extract($_POST);
-			if(!empty($idCompteur) && !empty($compteur))
+			if(!empty($idCompteur) && !empty($indexCompteur))
 			{
-				$ok = $tdb->saveConsommation($idCompteur, $compteur);
+				$ok = $tdb->saveConsommation($idCompteur, $indexCompteur);
 			}
 			return $this->liste();
 		} else {

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-09-23 17:53:13
+/* Smarty version 3.1.30, created on 2018-10-10 18:27:48
   from "C:\xampp\htdocs\forage\view\village\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ba7b6e9ccead1_87384238',
+  'unifunc' => 'content_5bbe2884b0c7c5_14988079',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e4685f760f5df803bbfd3937a79db00499d5f308' => 
     array (
       0 => 'C:\\xampp\\htdocs\\forage\\view\\village\\index.html',
-      1 => 1537717989,
+      1 => 1539188860,
       2 => 'file',
     ),
   ),
@@ -20,33 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba7b6e9ccead1_87384238 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbe2884b0c7c5_14988079 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>page d'accueil</title>
+    <title>Village</title>
     <!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
     <link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/bootstrap.min.css"/>
     <link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/samane.css"/>
-    <style>
-      h1{ 
-        color: #40007d;
-      }
-    </style>
+    <link rel="shortcut icon" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/favicon.ico">
   </head>
   <body>
-    <img src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/image/logo.jpg" class="resize" />
     <div class="nav navbar navbar-default navbar-fixed-top">
       <ul class="nav navbar-nav">
         <!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Village/index">Accueil Village</a></li>
+Compteur/index">Accueil </a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Village/add">Ajouter un nouveau Village</a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>

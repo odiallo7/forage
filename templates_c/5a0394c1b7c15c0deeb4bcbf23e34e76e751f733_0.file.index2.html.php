@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-10-10 19:03:43
-  from "C:\xampp\htdocs\forage\view\compteur\index.html" */
+/* Smarty version 3.1.30, created on 2018-10-10 19:03:49
+  from "C:\xampp\htdocs\forage\view\compteur\index2.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5bbe30efbba096_27761106',
+  'unifunc' => 'content_5bbe30f5362e02_73364280',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '609f9872bc23c6b75470b250831fb1c25244fad1' => 
+    '5a0394c1b7c15c0deeb4bcbf23e34e76e751f733' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\forage\\view\\compteur\\index.html',
-      1 => 1539191020,
+      0 => 'C:\\xampp\\htdocs\\forage\\view\\compteur\\index2.html',
+      1 => 1539190612,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bbe30efbba096_27761106 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbe30f5362e02_73364280 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Accueil</title>
+	<title>Compteur</title>
 	<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/bootstrap.min.css"/>
 	<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -50,15 +50,13 @@ public/image/favicon.ico">
         <!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Compteur/index">Accueil </a></li>
+Compteur/index">Accueil </a></li>       
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Client/index">Gestion des Clients</a></li>
+Compteur/add">Ajouter Compteur</a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Village/index">Gestion des Village</a></li>        
+Compteur/liste">Liste des Compteurs</a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Compteur/index2">Gestion des Compteurs et Consommations</a></li>
-        <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Facture/index">Gestion des Factures et Reglements</a></li>
+Compteur/saveconso">Enregistrer Consommation</a></li>
       </ul>
     </div>
 <body style="margin-top: 100px;">

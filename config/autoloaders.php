@@ -10,7 +10,7 @@
   ===================================================*/
     function welcome_params(){
         return array(
-                    'welcome_controller' => 'Accueil'
+                    'welcome_controller' => 'Compteur'
                     );
     }
 ?>

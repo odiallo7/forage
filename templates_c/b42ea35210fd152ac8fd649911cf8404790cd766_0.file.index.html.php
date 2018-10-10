@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-10-10 14:41:16
-  from "C:\xampp\htdocs\forage\view\client\index.html" */
+/* Smarty version 3.1.30, created on 2018-10-10 18:46:14
+  from "C:\xampp\htdocs\forage\view\facture\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5bbdf36c07ed21_96836573',
+  'unifunc' => 'content_5bbe2cd6e16318_61540400',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '93d2cdedff223ca65b664f389dadf581ff38118f' => 
+    'b42ea35210fd152ac8fd649911cf8404790cd766' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\forage\\view\\client\\index.html',
-      1 => 1539175083,
+      0 => 'C:\\xampp\\htdocs\\forage\\view\\facture\\index.html',
+      1 => 1539189968,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bbdf36c07ed21_96836573 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbe2cd6e16318_61540400 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Gestion Clients</title>
+	<title>Caisse</title>
 	<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/bootstrap.min.css"/>
 	<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -42,13 +42,15 @@ public/image/favicon.ico">
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Compteur/index">Accueil </a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Client/add">Ajouter Un Client</a></li>
+Consommation/facture">Générer Factures </a></li>
         <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Client/liste">Liste des clients</a></li>
+Facture/payer">Payer une Facture </a></li>
+        <li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Compteur/couper">Couper un Compteur </a></li>
       </ul>
     </div>
 <body>
-	<h1 style="text-align: center; margin-top: 100px">Gestion des Clients et Abonnements</h1>
+	<h1 style="text-align: center; margin-top: 100px">Gestion Reglement</h1>
 
 	<p style="text-align: center; margin-left: 80px; margin-right: 80px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

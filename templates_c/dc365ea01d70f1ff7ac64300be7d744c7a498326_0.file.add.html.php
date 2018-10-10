@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-09-23 17:55:35
+/* Smarty version 3.1.30, created on 2018-10-08 18:20:06
   from "C:\xampp\htdocs\forage\view\village\add.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ba7b777e3f0d6_57628497',
+  'unifunc' => 'content_5bbb83b60395e8_67707760',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dc365ea01d70f1ff7ac64300be7d744c7a498326' => 
     array (
       0 => 'C:\\xampp\\htdocs\\forage\\view\\village\\add.html',
-      1 => 1537718099,
+      1 => 1537826246,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba7b777e3f0d6_57628497 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbb83b60395e8_67707760 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +28,7 @@ function content_5ba7b777e3f0d6_57628497 (Smarty_Internal_Template $_smarty_tpl)
 	<title>Ajout d'un nouveau Village</title>
 	<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/bootstrap.min.css"/>
-		<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+	<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/samane.css"/>
 		<style>
 			h1{ 

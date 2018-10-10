@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-09-25 19:04:49
+/* Smarty version 3.1.30, created on 2018-10-08 19:24:00
   from "C:\xampp\htdocs\forage\view\compteur\saveconso.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5baa6ab13be491_60672031',
+  'unifunc' => 'content_5bbb92b07d3307_65580084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cc2a240ccf2a1e433d7eaa50906065e5ad3180e2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\forage\\view\\compteur\\saveconso.html',
-      1 => 1537895084,
+      1 => 1539019436,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baa6ab13be491_60672031 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbb92b07d3307_65580084 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -68,7 +68,7 @@ Compteur/saveconso">
 						</div>
 						<div class="form-group">
 							<label class="control-label">Consommation</label>
-							<input class="form-control" type="text" name="compteur" id="compteur"/>
+							<input class="form-control" type="text" name="indexCompteur" id="indexCompteur"/>
 						</div>						
 						<div class="form-group">
 							<input class="btn btn-success" type="submit" name="valider" value="Envoyer"/>

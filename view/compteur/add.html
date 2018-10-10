@@ -1,25 +1,20 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Compteur</title>
+		<title>Nouveau Compteur</title>
 		<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
 		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.min.css"/>
 		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/samane.css"/>
-		<style>
-			h1{ 
-				color: #40007d;
-			}
-		</style>
+
+		<link rel="shortcut icon" href="{$url_base}public/image/favicon.ico">
+		
 	</head>
-	<body>
-		<img src="{$url_base}public/image/logo.jpg" class="resize" />
+	<body>S
 		<div class="nav navbar navbar-default navbar-fixed-top">
 			<ul class="nav navbar-nav">
 				<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
-				<li><a href="{$url_base}Compteur/index">Accueil Compteur</a></li>
-				<li><a href="{$url_base}Compteur/add">Ajour d'un Compteur</a></li>
+				<li><a href="{$url_base}Compteur/index">Accueil </a></li>
 				<li><a href="{$url_base}Compteur/liste">Liste des Compteurs</a></li>
-				<li><a href="{$url_base}Compteur/saveconso">Enregistrer Consommation</a></li>
 			</ul>
 		</div>
 		<div class="col-md-8 col-xs-12 col-md-offset-2" style="margin-top:150px;">
@@ -32,10 +27,14 @@
 							<label class="control-label">ID Compteur</label>
 							<input class="form-control" type="text" name="idCompteur" id="idCompteur"/>
 						</div>
-						<div class="form-group">
-							<label class="control-label">Compteur</label>
-							<input class="form-control" type="text" name="compteur" id="compteur"/>
+						<!-- <div class="form-group">
+							<label class="control-label">Index du Compteur</label>
+							<input class="form-control" type="text" name="indexCompteur" id="indexCompteur"/>
 						</div>
+						<div class="form-group">
+							<label class="control-label">Consommation</label>
+							<input class="form-control" type="text" name="conso" id="conso"/>
+						</div> -->
 						<!-- <div class="form-group">
 							<label class="control-label">Etat</label>
 							<input class="form-control" type="text" name="etatCompteur" id="etatCompteur"/>
@@ -54,7 +53,7 @@
 						</div>
 						<div class="form-group">
 							<input class="btn btn-success" type="submit" name="valider" value="Envoyer"/>
-							<input class="btn btn-danger" type="reset" name="annuler" value="Annuler"/>
+							<a class="btn btn-danger" href="{$url_base}Compteur/index">Annuler </a>
 						</div>
 					</form>
 				</div>

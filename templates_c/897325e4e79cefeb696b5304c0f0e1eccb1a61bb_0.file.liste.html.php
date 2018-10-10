@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-09-25 15:36:21
+/* Smarty version 3.1.30, created on 2018-10-10 18:27:52
   from "C:\xampp\htdocs\forage\view\village\liste.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5baa39d53fc555_36492107',
+  'unifunc' => 'content_5bbe2888f02123_68264837',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '897325e4e79cefeb696b5304c0f0e1eccb1a61bb' => 
     array (
       0 => 'C:\\xampp\\htdocs\\forage\\view\\village\\liste.html',
-      1 => 1537882568,
+      1 => 1539175058,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baa39d53fc555_36492107 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbe2888f02123_68264837 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,6 +39,8 @@ public/css/dataTables.jqueryui.css">
 public/css/jquerydataTables.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/datatables.min.css"> 
+    <link rel="shortcut icon" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/favicon.ico">
 
     <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -83,11 +85,11 @@ public/js/dataTables.bootstrap.min.js"><?php echo '</script'; ?>
     <ul class="nav navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Village/index"> Accueil</a>
+Compteur/index"> Accueil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Village/add">Ajouter </a>
+Village/add">Ajouter villages</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -95,6 +97,7 @@ Village/liste">Liste Villages</a>
       </li>
     </ul>
   </div>
+
     <div class="container" style="margin-top: 60px">
      <h1>La liste de villages de SenForage !</h1>
     <?php if (isset($_smarty_tpl->tpl_vars['villages']->value)) {?>
